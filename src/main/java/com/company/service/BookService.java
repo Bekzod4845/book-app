@@ -39,7 +39,7 @@ public class BookService {
 
     public void update(Integer id, BookDTO dto) {
         Optional<BookEntity> optional = bookRepository.findById(id);
-        if (optional.isEmpty()){
+        if (!optional.isPresent()){
             throw  new RuntimeException("not fount book");
         }
         BookEntity bookEntity = optional.get();
