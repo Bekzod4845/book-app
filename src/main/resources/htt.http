@@ -7,3 +7,19 @@ Content-Type: application/json
   "title" : "dcsdcc"
 
 }
+
+###
+GET http://localhost:8080/book/list
+
+####
+PUT http://localhost:8080/book/update/2
+Content-Type: application/json
+
+{
+  "name" : "aaaaaa",
+  "author" : "aaaaaa",
+  "title" : "aaaaaaa"
+}
+
+###
+DELETE http://localhost:8080/book/delete/27
